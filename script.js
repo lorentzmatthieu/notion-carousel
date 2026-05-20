@@ -16,23 +16,25 @@ new Swiper(".mySwiper", {
 
   effect: "coverflow",
 
-  grabCursor: true,
   centeredSlides: true,
   loop: true,
 
   slidesPerView: "auto",
 
   autoplay: {
-    delay: CONFIG.autoplayDelay || 3000,
+    delay: 2500,
     disableOnInteraction: false,
   },
+
+  speed: 800,
 
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 180,
-    modifier: 1.2,
+    depth: 250,
+    modifier: 1,
     slideShadows: false,
+    scale: 0.9,
   },
 
   pagination: {
@@ -43,14 +45,5 @@ new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1
-    },
-    768: {
-      slidesPerView: 3
-    }
   }
 });
