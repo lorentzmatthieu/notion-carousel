@@ -1,3 +1,5 @@
+console.log("BUILD VERSION:", new Date());
+
 const wrapper = document.getElementById("swiper-wrapper");
 
 CONFIG.images.forEach(image => {
