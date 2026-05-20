@@ -1,9 +1,10 @@
 const CONFIG = {
   autoplayDelay: 3000,
-  slidesPerView: 1.2,
+  slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 20,
   loop: true,
+  effect: "coverflow",
 
   images: [
     "images/Image1.png",
