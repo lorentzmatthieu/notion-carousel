@@ -14,15 +14,25 @@ CONFIG.images.forEach(image => {
 
 new Swiper(".mySwiper", {
 
-  loop: CONFIG.loop,
+  effect: "coverflow",
 
-  slidesPerView: CONFIG.slidesPerView,
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
 
-  spaceBetween: CONFIG.spaceBetween,
+  slidesPerView: 3,   // IMPORTANT : vos 3 images visibles
 
   autoplay: {
-    delay: CONFIG.autoplayDelay,
+    delay: CONFIG.autoplayDelay || 3000,
     disableOnInteraction: false,
+  },
+
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 180,
+    modifier: 1.2,
+    slideShadows: false,
   },
 
   pagination: {
@@ -39,9 +49,8 @@ new Swiper(".mySwiper", {
     0: {
       slidesPerView: 1
     },
-
     768: {
-      slidesPerView: CONFIG.slidesPerView
+      slidesPerView: 3
     }
   }
 });
