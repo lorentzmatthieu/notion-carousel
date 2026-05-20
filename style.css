@@ -100,4 +100,19 @@ html, body {
     width: 220px;
   }
 
+   #version {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  background: rgba(0,0,0,0.7);
+  color: white;
+
+  padding: 6px 10px;
+  border-radius: 10px;
+
+  font-size: 12px;
+  z-index: 9999;
+}
+
 }
