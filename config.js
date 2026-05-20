@@ -1,8 +1,8 @@
 const CONFIG = {
-  autoplayDelay: 3000,
+  autoplayDelay: 5000,
   slidesPerView: 3,
   centeredSlides: true,
-  spaceBetween: 20,
+  spaceBetween: 200,
   loop: true,
   effect: "coverflow",
 
