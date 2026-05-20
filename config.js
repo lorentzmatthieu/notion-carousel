@@ -5,10 +5,10 @@ const CONFIG = {
   loop: true,
 
   images: [
-    "images/image1.png",
-    "images/image2.png",
-    "images/image3.png",
-    "images/image4.png",
-    "images/image5.png"
+    "images/Image1.png",
+    "images/Image2.png",
+    "images/Image3.png",
+    "images/Image4.png",
+    "images/Image5.png"
   ]
 };
