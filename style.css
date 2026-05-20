@@ -5,45 +5,51 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: transparent;
   overflow: hidden;
+  background: transparent;
   font-family: Arial, sans-serif;
 }
 
 /* =========================
-   SWIPER CONTAINER (FORMAT IPHONE)
+   SWIPER CONTAINER
 ========================= */
 
 .swiper {
   width: 100%;
-
-  /* 🎯 ratio iPhone moderne */
-  aspect-ratio: 9 / 19.5;
-
-  /* sécurité si aspect-ratio non supporté */
-  max-height: 700px;
-
-  margin: 0 auto;
-
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  overflow: visible;
 }
 
 /* =========================
-   SLIDES
+   SLIDES FORMAT IPHONE
 ========================= */
 
 .swiper-slide {
-  border-radius: 24px;
+
+  /* 🎯 FORMAT IPHONE */
+  aspect-ratio: 9 / 19.5;
+
+  width: 280px;
+
+  border-radius: 32px;
   overflow: hidden;
 
-  opacity: 0.6;
-  transform: scale(0.85);
+  opacity: 0.5;
+  transform: scale(0.82);
 
-  transition: transform 0.4s ease, opacity 0.4s ease;
+  transition:
+    transform 0.45s ease,
+    opacity 0.45s ease;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.18);
 }
 
-/* slide centrale */
+/* =========================
+   SLIDE ACTIVE
+========================= */
+
 .swiper-slide-active {
   opacity: 1;
   transform: scale(1);
@@ -57,10 +63,9 @@ html, body {
   width: 100%;
   height: 100%;
 
-  object-fit: cover; /* essentiel pour screenshots iPhone */
+  object-fit: cover;
 
   display: block;
-  border-radius: 24px;
 }
 
 /* =========================
@@ -69,8 +74,8 @@ html, body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: rgba(0, 0, 0, 0.6);
-  transform: scale(0.8);
+  color: rgba(0,0,0,0.55);
+  transform: scale(0.7);
 }
 
 /* =========================
@@ -78,11 +83,11 @@ html, body {
 ========================= */
 
 .swiper-pagination-bullet {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0,0,0,0.25);
 }
 
 .swiper-pagination-bullet-active {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0,0,0,0.75);
 }
 
 /* =========================
@@ -90,11 +95,9 @@ html, body {
 ========================= */
 
 @media (max-width: 768px) {
-  .swiper {
-    aspect-ratio: 9 / 19.5;
-  }
 
   .swiper-slide {
-    transform: scale(0.9);
+    width: 220px;
   }
+
 }
