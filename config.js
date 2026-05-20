@@ -3,7 +3,7 @@ const CONFIG = {
   slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 200,
-  loop: true,
+  loop: false,
   effect: "coverflow",
 
   images: [
