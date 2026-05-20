@@ -1,6 +1,7 @@
 const CONFIG = {
   autoplayDelay: 3000,
-  slidesPerView: 3,
+  slidesPerView: 1.2,
+  centeredSlides: true,
   spaceBetween: 20,
   loop: true,
 
