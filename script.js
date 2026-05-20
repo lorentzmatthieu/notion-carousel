@@ -20,7 +20,7 @@ new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
 
-  slidesPerView: 3,   // IMPORTANT : vos 3 images visibles
+  slidesPerView: "auto",
 
   autoplay: {
     delay: CONFIG.autoplayDelay || 3000,
